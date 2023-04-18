@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-imc',
@@ -6,17 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./imc.component.css']
 })
 export class ImcComponent {
-  peso : number;
+  peso : number ;
   altura : number;
   imc : number;
 
-  constructor(){
-    let imc = 0;
-    let alt = this.altura;
-    let pes = this.peso;
-
-    this.imc = peso / (alt** 2);
-    alert(this.imc);
+cal(){
+    this.imc = this.peso / (this.altura * 2);
 
      this.imc;
 
