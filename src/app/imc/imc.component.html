@@ -5,15 +5,18 @@
         <form id="imc-form">
 
             <div class="form-floating mb-3">
-              <input [(ngModel)]="altura" class="form-control" id="altura" name="altura" type="number" placeholder="altura" >
-              <label for="altura">Altura:</label>
+              <input [(ngModel)]= "altura" id="Altura" name="Altura" type="number" placeholder="Altura:" >
             </div>
             <br>
             <div class="form-floating mb-3">
-              <input [(ngModel)]="peso" class="form-control" id="peso" name="peso" type="number" placeholder="Peso">
-              <label for="peso">Peso:</label>
+              <input [(ngModel)]="peso" id="peso" name="peso" type="number" placeholder="Peso:">
             </div>
           <div class="d-grid gap-2 d-md-flex justify-content-md-center mt-5 ">
             <button type="button" class="btn btn-outline-dark btn-lg" (click)="cal()">Calcular</button>
           </div>
+          <br>
+          <div class="resultado display-6">
       {{imc}}
+        <br>
+        {{resul}}
+      </div>
